@@ -1,0 +1,64 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+@font-size: 32px;
+@rowhight: 50px;
+//good-nav 样式
+.row {
+  z-index: 1;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  height: @rowhight;
+  display: flex;
+  flex: 6;
+  background: #cccccc;
+  .left {
+    position: relative;
+    left:0;
+    top:0;
+    height: @rowhight;
+    line-height: @rowhight;
+    flex: 4;
+
+    .icon-zhuye {
+      padding-left: 6px;
+      font-size: @font-size;
+      color:black;
+    }
+
+    span {
+      margin-left:100px;
+      margin-right:10px;
+      font-size: 20px;
+      color: #111111;
+      text-align: center;
+    }
+  }
+  .right {
+    position: relative;
+    right:0;
+    top:0;
+    flex: 2;
+    height: @rowhight;
+    line-height: @rowhight;
+
+    .icon-sousuo {
+      bottom: 0;
+      font-size: @font-size;
+      color: black;
+      margin-right:60px;
+      position: relative;
+      left:40px;
+
+    }
+    .icon-icon-- {
+      font-size: @font-size;
+      color: black;
+    }
+  }
+}
