@@ -10,14 +10,19 @@ import actions from '../../store/action/goods'
     componentDidMount(){
         //发送请求
         this.props.getslider();
-        console.log(this.props,'goodprops');
+        this.props.getList();
+
+
     }
     render() {
         console.log(this.props,'goodpropsrender');
+        console.log(this.props.lessons.list,'list');
+
       return <div>
           <GoodNav></GoodNav>
           <GoodSlider sliders={this.props.sliders} ></GoodSlider>
-          <GoodSliders></GoodSliders>
+          <GoodSliders list={this.props.lessons.list}></GoodSliders>
+
       </div>
     }
 }

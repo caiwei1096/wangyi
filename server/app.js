@@ -32,7 +32,7 @@ app.get('/getCategory',function(req,res){
 // 获取首页列表信息
 let list = require('./mock/list');
 app.get('/getList/',function(req,res){
-  let list = JSON.parse(JSON.stringify(lessons));//深度克隆lessons
+   list = JSON.parse(JSON.stringify(list));//深度克隆lessons 此处改为list
   res.json({
       list
   });

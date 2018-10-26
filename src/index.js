@@ -12,14 +12,15 @@ import {HashRouter as Router, Route, Switch, Redirect} from 'react-router-dom'
 
 ReactDOM.render(
     <Router>
-        <Provider store={store}>
-            <App>
-                <Route path="/" exact={true} component={Home}/>
-                <Route path="/cart" component={Cart}/>
-                <Route path="/class" component={Class}/>
-                <Route path="/goods" component={Goods}/>
-                <Route path="/profile" component={Profile}/>
-            </App>
-        </Provider>
+    <Provider store={store}>
+        <App>
+            <Route path="/" exact={true} component={Home}/>
+            <Route path="/cart" component={Cart}/>
+            <Route path="/class" component={Class}/>
+            <Route path="/goods" component={Goods}/>
+            <Route path="/profile" component={Profile}/>
+        </App>
+    </Provider>
 
-    </Router>, window.root)
+</Router>, window.root
+)

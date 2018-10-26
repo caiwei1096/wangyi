@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"yarn run dev",
-    "dev":"webpack-dev-server --port 9000 --config webpack.config.js",
-    "build":"webpack --config webpack.config.js"
+    "start": "yarn run dev",
+    "dev": "webpack-dev-server --port 9000 --config webpack.config.js",
+    "build": "webpack --config webpack.config.js"
   },
   "keywords": [],
   "author": "",
@@ -44,6 +44,7 @@
     "redux-logger": "^3.0.6",
     "redux-promise": "^0.5.3",
     "redux-thunk": "^2.2.0",
-    "swipe-js-iso": "^2.0.4"
+    "swipe-js-iso": "^2.0.4",
+    "swiper": "^4.4.1"
   }
 }

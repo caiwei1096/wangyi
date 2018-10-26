@@ -16,11 +16,11 @@
   height: @rowhight;
   display: flex;
   flex: 6;
-  background: rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.1);
   .left {
     position: relative;
-    left:0;
-    top:0;
+    left: 0;
+    top: 0;
     height: @rowhight;
     line-height: @rowhight;
     flex: 4;
@@ -28,21 +28,22 @@
     .icon-zhuye {
       padding-left: 6px;
       font-size: @font-size;
-      color:black;
+      color: black;
     }
 
     span {
-      margin-left:100px;
-      margin-right:10px;
+      margin-left: 100px;
+      margin-right: 10px;
       font-size: 20px;
       color: #111111;
       text-align: center;
+      font-family: Tahoma;
     }
   }
   .right {
     position: relative;
-    right:0;
-    top:0;
+    right: 0;
+    top: 0;
     flex: 2;
     height: @rowhight;
     line-height: @rowhight;
@@ -51,9 +52,9 @@
       bottom: 0;
       font-size: @font-size;
       color: black;
-      margin-right:60px;
+      margin-right: 60px;
       position: relative;
-      left:40px;
+      left: 40px;
 
     }
     .icon-icon-- {
@@ -62,28 +63,67 @@
     }
   }
 }
+
 //good-slider样式
-.slider{
-  .carousel{
-    width:95%;
+.slider {
+  .carousel {
+    width: 95%;
     height: 145px;
-    margin:10px auto;
+    margin: 10px auto;
     border-radius: 8px;
-    img{
-      border-radius: 8px;
-    }
+
   }
 }
 
+//}
+
 //good-slider2样式
-.smallslider{
-  width:100%;
-  height: 105px;
-  .carousel{
-    width:100%;
-    height: 105px;
-    img{
-      width:100px;
+.slides {
+  margin: 0px 5px;
+  .swiper-container {
+    height: 110px;
+    // position: relative;
+    padding: 0 5px;
+    // touch-action: none;
+    .swiper-slide {
+
+
+      .divslider {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        background-size: 100% 100%;
+        .title {
+         margin: -28px 0px;
+          width: 80px;
+          height: 20px;
+          line-height: 20px;
+          text-align: center;
+          background: rgba(0, 0, 0, 0.01);
+          font: 12px/1.5 Tahoma;
+          bottom:0;
+          position:absolute;
+
+        }
+        .topnum {
+          position: absolute;
+          width: 80px;
+          height: 20px;
+          span {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 6px;
+            //font-family: "Arial"
+            font: 12px/1 Tahoma;
+          }
+        }
+      }
+
     }
+
   }
 }
+
+
+
