@@ -16,7 +16,7 @@
   height: @rowhight;
   display: flex;
   flex: 6;
-  background: #cccccc;
+  background: rgba(0,0,0,0.1);
   .left {
     position: relative;
     left:0;
@@ -59,6 +59,31 @@
     .icon-icon-- {
       font-size: @font-size;
       color: black;
+    }
+  }
+}
+//good-slider样式
+.slider{
+  .carousel{
+    width:95%;
+    height: 145px;
+    margin:10px auto;
+    border-radius: 8px;
+    img{
+      border-radius: 8px;
+    }
+  }
+}
+
+//good-slider2样式
+.smallslider{
+  width:100%;
+  height: 105px;
+  .carousel{
+    width:100%;
+    height: 105px;
+    img{
+      width:100px;
     }
   }
 }
