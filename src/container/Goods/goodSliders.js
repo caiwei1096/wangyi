@@ -29,8 +29,8 @@ export default class GoodSliders extends Component {
             slidesPerView: 4,
             spaceBetween: 10,
             freeMode: true,
-            observer: true,//修改swiper自己或子元素时，自动初始化swiper
-            observeParents: true
+           // observer: true,//修改swiper自己或子元素时，自动初始化swiper
+          // observeParents: true
         })
     }
 
