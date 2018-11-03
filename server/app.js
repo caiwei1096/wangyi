@@ -37,6 +37,28 @@ app.get('/getList/',function(req,res){
       list
   });
 });
+let users = [];
+app.post('/reg',function(req,res){
+    let user = req.body;//得到请求体 body-parser中间件
+    users.push(user);
+    res.json({
+        success:'用户注册成功!'
+    });
+});
+app.post('/login',function(req,res){
+    let body = req.body;//得到请求体 body-parser中间件{username,password}
+    let user = users.find(item=>item.username== body.username && item.password == body.password);
+    if(user){
+        res.json({
+            user,
+            success:'用户登录成功!'
+        });
+    }else{
+        res.json({
+            error:'用户登录失败!'
+        });
+    }
 
+});
 
 app.listen(3001);
