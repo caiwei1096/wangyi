@@ -1,0 +1,1 @@
+[{"id":23,"title":"缎面棒球帽","prop":["棕色"],"desc":"极简设计，造型利器，一秒出门。","flag":["配件特惠"],"price":"￥47","del_price":"￥89","cate_id":"107","url":"http://yanxuan.nosdn.127.net/19b3930f97d7326b160acff7d5b76e8a.png?imageView&quality=65&thumbnail=330x330","isSelected":false,"num":2,"delSelect":false}]
