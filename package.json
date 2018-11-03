@@ -47,6 +47,10 @@
     "redux-promise": "^0.5.3",
     "redux-thunk": "^2.2.0",
     "swipe-js-iso": "^2.0.4",
+<<<<<<< HEAD
     "swiper": "^4.4.1"
+=======
+    "swiper":"4.4.1"
+>>>>>>> 926a6784389c2b767a7cff73233f9dcb06a4cd7a
   }
 }
